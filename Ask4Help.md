@@ -1,5 +1,6 @@
 # Ask4Help: Learning to Leverage an Expert for Embodied Tasks
 [Related Work]
+
 {Embodied AI}
 - Recent advances in embodied AI tasks have prompted the development of methods for soliciting assistance.
 - existing approaches often rely on imitation and extensive model modifications
