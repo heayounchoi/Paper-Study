@@ -89,8 +89,7 @@
                 5. Multi-Scale Combinatorial Grouping (MCG): 여러 스케일에서 세분화된 영역을 생성하고, 이를 조합하여 객체 후보를 형성. 이 방법은 다양한 크기와 모양의 객체를 탐지하는 데 유용함
                 6. Ciresan et al.: 정기적으로 배치된 정사각형 크롭에 CNN을 적용하여 미토시스(mitotic cells)를 탐지하는 방법을 제안. 이는 정사각형 크롭이 region proposal의 한 형태로 사용됨을 보여줌
             - R-CNN은 선택적 탐색(Selective Search) 사용
-                
-                ![img.png](R-CNN%200b2f76f464394891bb64050503bb0c79/img.png)
+    ![img](https://github.com/heayounchoi/Paper-Study/assets/118031423/2af68928-9b3d-4111-99bf-d44230e41c0b)
                 
         - Feature extraction
     - Test-time detection
