@@ -152,7 +152,7 @@
     - cross-attention을 통해 얻은 다른 모달리티 간의 상호작용 정보는 각 모달리티의 원래 정보와 함께 concatenate 됨. 각 모달리티의 정보와 상호작용 정보가 결합되어 새로운 표현이 형성됨
     - 연결된 정보는 또 다른 트랜스포머에 의해 처리됨. 이런 종류의 계층적 cross-modal interaction은 cross-attention의 단점을 보완할 수 있음
 
-![Untitled](Multimodal%20Learning%206d7293d0dd984fd9b2ec0dbbc9908658/Untitled.png)
+![Untitled](https://github.com/heayounchoi/Paper-Study/assets/118031423/fd4b2991-f3c6-42a6-89d2-2fccfb5983a9)
 
 **Network Architectures**
 
