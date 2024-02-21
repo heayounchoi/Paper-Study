@@ -29,8 +29,7 @@
 - seen의 visual feature와 semantic information만을 입력 받아 학습
 
 ## GZSL Methods
-
-![Untitled](Zero-Shot%20Learning%20b139c081e89a4b64a959d6f4cb84f8d0/Untitled.png)
+![Untitled](https://github.com/heayounchoi/Paper-Study/assets/118031423/2ae300f6-3326-4da2-84ec-76fb3520cbfa)
 
 ## Embedding Space
 
@@ -57,8 +56,7 @@ c) latent embedding
 - ZSL와 GZSL은 visual feature를 semantic space로 project하고, 고차원 space에서 nearest neighbor search를 하여 unseen에 대한 class를 예측하므로 nearest neighbors에 치명적인 차원의 저주 문제가 발생. 차원의 저주란 차원이 높아질수록 data 사이의 거리가 멀어지는 문제
 
 (2) domain shift problem
-
-![Untitled](Zero-Shot%20Learning%20b139c081e89a4b64a959d6f4cb84f8d0/Untitled%201.png)
+![Untitled_1](https://github.com/heayounchoi/Paper-Study/assets/118031423/d0a3a458-71e8-4e05-8500-0dbf2e653880)
 
 - seen class의 data로 ZSL, GZSL의 mapping 함수가 학습되었으므로 unseen class에 대한 adaptation이 없다면 domain shift problem이 발생함. 이 문제는 주로 unseen의 아무런 정보없이 학습하는 inductive based method에서 발생함
 
