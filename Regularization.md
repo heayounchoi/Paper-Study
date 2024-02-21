@@ -6,17 +6,16 @@
 - 규제화는 기존의 비용함수에 penalty term을 더해서 새로운 비용함수로 사용하는 방법
 - **Lp norm**
 
-￼<img width="311" alt="Pasted Graphic 30" src="https://github.com/heayounchoi/Paper-Study/assets/118031423/dc335f44-d8b5-47d8-ba01-ea6f49ff8af1">
+<img width="311" alt="Pasted Graphic 30" src="https://github.com/heayounchoi/Paper-Study/assets/118031423/dc335f44-d8b5-47d8-ba01-ea6f49ff8af1">
 
 - L1 norm은 p에 1을, L2 norm은 p에 2를 대입해줌
 
-￼<img width="356" alt="Pasted Graphic 31" src="https://github.com/heayounchoi/Paper-Study/assets/118031423/ca4c1efd-e33a-4e49-b7e8-311f80a6b4b0">
-
+<img width="356" alt="Pasted Graphic 31" src="https://github.com/heayounchoi/Paper-Study/assets/118031423/ca4c1efd-e33a-4e49-b7e8-311f80a6b4b0">
+<br>
 <img width="258" alt="Pasted Graphic 34" src="https://github.com/heayounchoi/Paper-Study/assets/118031423/6142c236-8a67-466a-9daf-2f720e0411e7">
+<br>
+<img width="356" alt="Pasted Graphic 32" src="https://github.com/heayounchoi/Paper-Study/assets/118031423/a73a119b-50f5-4fc6-8ad2-3936017580da">
 
-
-<img width="356" alt="Pasted Graphic 32" src="https://github.com/heayounchoi/Paper-Study/assets/118031423/a73a119b-50f5-4fc6-8ad2-3936017580da">￼
-￼
 - L1 penalty term을 사용하면 이렇게 되는데, 여기서 람다는 하이퍼파라미터로 페널티의 강도를 의미함. 람다의 크기를 키우면, 키울수록 페널티항이 커지기 때문에 기존의 파라미터 절댓값이 더 많이 줄어들게 됨
 
 <img width="561" alt="Pasted Graphic 35" src="https://github.com/heayounchoi/Paper-Study/assets/118031423/3820077e-e3fe-4627-8276-652078d8b027">
