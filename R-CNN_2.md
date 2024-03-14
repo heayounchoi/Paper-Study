@@ -34,12 +34,13 @@
 
 ---
 **Object detection with R-CNN**
-- three moduls of R-CNN:
+- three modules of R-CNN:
 > 1) generates category-independent region proposals
 > 2) large convolutional neural network that extracts a fixed-length feature vector from each region
 > 3) set of class-specific linear SVMs
 
 **_Module design_**
+
 _Region proposals_
 - while R-CNN is agnostic to the particular region proposal method, selective search is used to enable a controlled comparison with prior detection work
 
@@ -56,6 +57,7 @@ _Feature extraction_
 5) apply greedy non-maximum suppression (for each class independently) that rejects a region if it has an intersection-over-union (IoU) overlap with a higher scoring selected region larger than a learned threshold
 
 **_Training_**
+
 _Supervised pre-training_
 - pre-trained on ILSVRC2012
 
@@ -73,6 +75,7 @@ _Object category classifiers_
 
 ---
 **Visualization, ablation, and modes of error**
+
 **_Visualizing learned features_**
 - 기존에는 deconvolution 방법을 사용했음
 - deconvolution 방법은 CNN의 중간 계층에서의 활성화를 역추적하여, 네트워크가 특정 출력을 생성하는데 중요한 입력 이미지의 부분을 시각화함
@@ -80,6 +83,7 @@ _Object category classifiers_
 <img src="https://velog.velcdn.com/images/heayounchoi/post/37501e5e-4505-4711-8af3-47b214582f20/image.png" width="50%">
 
 **_Ablation studies_**
+
 _Performance layer-by-layer, without fine-tuning_
 - much of the CNN's representational power comes from its conv layers
 
@@ -90,7 +94,7 @@ _Comparison to recent feature learning methods_
 - feature learning을 사용하는 DPM ST(sketch token)와 DPM HSC(histogram of sparse codes), 그리고 standard HOG-based DPM과 비교했을때도 R-CNN variants의 성능이 훨씬 좋았음
 
 **_Network architectures_**
-- OxfordNet이 TorontoNet보다 성능은 좋지만 forward passrk 7배 더 오래 걸림
+- OxfordNet이 TorontoNet보다 성능은 좋지만 forward pass가 7배 더 오래 걸림
 
 **_Detection error analysis_**
 - compared with DPM, significantly more of R-CNN errors result from poor localization(IoU 낮은거), rather than confusion with background or other object classes, indicating that the CNN features are much more discriminative than HOG
@@ -100,6 +104,7 @@ _Comparison to recent feature learning methods_
 
 ---
 **The ILSVRC2013 detection dataset**
+
 **_Dataset overview_**
 - training set은 annotation도 완전하지 않고 image distribution도 val/test set과 달라서 val set을 나눠서 negative examples를 뽑음(hard negative mining)
 
