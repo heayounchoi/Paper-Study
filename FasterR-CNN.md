@@ -12,7 +12,7 @@
 _Object Proposals_
 - grouping super-pixels: Selective Search, CPMC, MCG
 - sliding windows: objectness in windows, EdgeBoxes
-- object proposal methos were adopted as external modules independent of the detectors
+- object proposal methods were adopted as external modules independent of the detectors
 
 _Deep Networks for Object Detection_
 - R-CNN mainly plays as a classifier, and it does not predict object bounds (except for refining by bounding box regression)
@@ -47,7 +47,7 @@ _Deep Networks for Object Detection_
 - this feature is fed into two sibling fc layers--a box-regression layer (reg) and a box-classification layer (cls)
 
 _Anchors_
-- at each sliding-window location, we simultaneously predict multiple region proposals, where the number of maximum possible proposals for each loaction is denoted as k
+- at each sliding-window location, we simultaneously predict multiple region proposals, where the number of maximum possible proposals for each location is denoted as k
 - the reg layer has 4k outputs encoding the coordinates of k boxes, and the cls layer outputs 2k scores that estimate probability of object or not object for each proposal
 - the k proposals are parameterized relative to k reference boxes, which we call anchors
 - an anchor is centered at the sliding window in question, and is associated with a scale and aspect ratio
@@ -94,7 +94,7 @@ _Training RPNs_
 
 **_Sharing Features for RPN and Fast R-CNN_**
 - three ways for training networks with features shared:
-> 1) alternating training: first train RPN and use the propossals to train Fast R-CNN. the network tuned by fast r-cnn is then used to initialize RPN, and this process is iterated.
+> 1) alternating training: first train RPN and use the proposals to train Fast R-CNN. the network tuned by fast r-cnn is then used to initialize RPN, and this process is iterated.
 > 2) approximate joint training: 두 모델을 합쳐서 학습시킴. 하지만 proposal boxes' coordinates에 대한 미분은 무시함. 학습 시간이 줄어드는 장점이 있음
 > 3) non-approximate joint training: needs an RoI pooling layer that is differentiable w.r.t. the box coordinates. solution can be given by an "RoI warping" layer
 
