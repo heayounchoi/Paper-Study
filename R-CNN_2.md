@@ -23,6 +23,7 @@
 - in this paper, CNN localization problem is solved by operating within the "recognition using regions" paradigm, which has been successful for both object detection and semantic segmentation
 - at thes time, this method generates around 2000 category-independent region proposals for the input image, extracts a fixed-length feature vector from each proposal using a CNN, and then classifies each region with category-specific linear SVMs
 <img src="https://velog.velcdn.com/images/heayounchoi/post/90dbfed7-9c20-4761-b10a-da7a43a6cf28/image.png" width="50%">
+
 - on ILSVRC2013 detection, R-CNN outperforms OverFeat, with a mAP of 31.4% versus 24.3%
 - the second principle contribution of this paper is to show that supervised pre-training on a large auxiliary dataset(ILSVRC), followed by domain-specific fine-tuning on a small dataset (PASCAL), is an effective paradigm for learning high-capacity CNNs when data is scarce
 - fine-tuning for detection improved mAP performance by 8 percentage points
