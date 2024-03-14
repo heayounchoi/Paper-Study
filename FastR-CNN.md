@@ -68,10 +68,8 @@ _Mini-batch sampling_
 
 _Back-propagation through RoI pooling layers_
 
-<img src="https://velog.velcdn.com/images/heayounchoi/post/70d1fcea-c1f6-40ee-90b9-2c161e52f278/image.png" width="50%">
-<img src="https://velog.velcdn.com/images/heayounchoi/post/f619a163-55d3-4770-9b15-8b3a4df406a4/image.png" width="50%">
-
-- the partial derivative is accumulated if i is the argmax selected for y by max pooling
+<img width="50%" alt="image" src="https://github.com/heayounchoi/Paper-Study/assets/118031423/bf7b7731-43d1-43be-a5d1-0b0518fc841b">
+<img width="50%" alt="image" src="https://github.com/heayounchoi/Paper-Study/assets/118031423/56a3310b-289f-4686-9825-20f6d35231eb">
 
 _SGD hyper-parameters_
 - fc layers are initialized from zero-mean Gaussian distributions with standard deviations 0.01 (softmax) and 0.001 (regression) and biases are initialized to 0
@@ -130,6 +128,7 @@ _Truncated SVD_
 ---
 
 **Design evaluation**
+
 **_Does multi-task training help?_**
 - multi-task training improves pure classification accuracy relative to training for classification alone
 
