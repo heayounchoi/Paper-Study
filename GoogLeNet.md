@@ -34,6 +34,7 @@
 **Architectural Details**
 
 <img src="https://velog.velcdn.com/images/heayounchoi/post/b782efa4-97ab-4240-981f-8e0281512077/image.png" width="50%">
+
 - Inception 아키텍처의 핵심 아이디어는 컨볼루션 비전 네트워크에서 최적의 local sparse structure를 어떻게 근사하고, 이미 사용 가능한 dense 컴포넌트로 커버할 수 있는지를 찾아내는데 있음
 - 이전 레이어의 각 단위가 입력 이미지의 어떤 영역과 대응된다고 가정하며, 이 단위들은 필터 뱅크로 그룹화됨
 - 출력 필터 뱅크가 단일 출력 벡터로 연결되어 다음 단계의 입력을 형성함
