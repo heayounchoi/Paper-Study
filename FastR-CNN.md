@@ -13,7 +13,7 @@
 > 3) Object detection is slow: at test-time, features are extracted from each object proposal in each test image, taking 47s/image on detection with VGG16 (on a GPU)
 
 - R-CNN is slow b/c it performs a ConvNet forward pass for each object proposal, without sharing computation
-- SPPnets (spatial pyramid pooling networks) speeds up R-CNN by sharing computation
+- SPPnets (spatial pyramid pooling networks) speeds up R-CNN by sharing computation (spatial pyramid pooling의 아이디어가 구글넷이랑 비슷함)
 - SPPnet computes a conv feature map for the entire input image and then classifies each object proposal using a feature vector extracted from the shared feature map
 - SPPnet accelerates R-CNN by 10 to 100x at test time and 3x at trainig time
 - however, fine-tuning algorithm cannot update the conv layers that precede the spatial pyramid pooling and this limitation (fixed conv layers) limits the accuracy of very deep networks
@@ -50,7 +50,7 @@
 **_Fine-tuning for detection_**
 - training all network weights with back-propagation is an important capability of Fast R-CNN
 - why SPPnet is unable to update weights below the spatial pyramid pooling layer?
-> - back-propagation through the SPP layer is highly inefficient when each training sample (ex. RoI) comes from a different image, which is exactly how R-CNN and SPPnet networks are trained
+> - back-propagation through the SPP layer is highly inefficient when each training sample (ex. RoI) comes from a different image, which is exactly how R-CNN and SPPnet networks are trained (각 RoI에 대해서 고정된 feature vector를 생성하는데, 각 RoI가 다른 이미지 영역을 커버하기 때문에, 이들로부터 계산된 손실을 공유된 컨볼루션 피처 맵에 대해 역전파하면 각 RoI에서의 그래디언트가 서로 상충할 수 있다고 함)
 - in Fast R-CNN training, SGD mini batches are sampled hierarchically, first by sampling N images and then by sampling R/N RoIs from each image
 - RoIs from the same image share computation and memory in the forward and backward passes
 
