@@ -1,6 +1,7 @@
 ### [YOLOv3: An Incremental Improvement](https://arxiv.org/pdf/1804.02767.pdf)
 
 **The Deal**
+
 **_Bounding Box Prediction_**
 - same as YOLO9000 for coordinate prediction
 - during training, uses sum of squared error loss
