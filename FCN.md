@@ -11,9 +11,13 @@
 > patchwise training: 전체 이미지 대신 이미지의 작은 부분(패치)을 사용하여 모델을 학습시키는 방식. 전체 이미지의 맥락을 고려하지 않고 개별 패치만을 사용하여 학습하기 때문에, 패치 간의 관계나 전체 이미지의 구조적 특성을 놓칠 수 있고, 추론 단계에서 전체 이미지를 처리하기 위해 여러 패치로 나누어 예측을 수행한 후, 이를 다시 합쳐야하는 경우가 많음.
 - does not make use of pre- and post-processing complications, including superpixels, proposals, or post-hoc refinement by random fields or local classifiers
 > superpixels: 이미지를 보다 의미 있는 덩어리로 그룹화하여 처리하는 기술
+
 > post-hoc refinement: 이미 생성된 결과를 개선하기 위해 추가 처리를 적용하는 것
+
 > random fields: 통계적 또는 확률적 모델로, 이미지, 시간 또는 공간 데이터와 같이 여러 변수 간의 상호작용을 모델링하는 데 사용됨.
+
 > CRF(Conditional Random Fields): 주로 시퀀스 데이터를 처리하는 데 사용되며, 이미지 처리에서는 픽셀 또는 슈퍼픽셀 간의 관계를 모델링하는 데 유용함
+
 > local classifiers: 입력 데이터의 일부 지역적 특성에 기반하여 분류 결정을 내리는 모델
 - this model transfers recent success in classification to dense prediction by reinterpreting classification nets as fully convolutional and fine-tuning from their learned representations
 - Semantic segmentation faces an inherent tension between semantics and location: global information resolves what while local information resolves where.
