@@ -102,3 +102,15 @@ _Metrics_
 
 ---
 
+**Appendix**
+- scaling the depth of transformer results in the biggest improvements which are clearly visible up until 64 layers
+- scaling the width of the network results in the smallest changes
+- decreasing the patch size and thus increasing the effective sequence length shows robust improvements without introducing parameters
+- these finding suggest that compute might be a better predictor of performance than the number of parameters, and that scaling should emphasize depth over width if any
+- overall, scaling all dimensions proportionally results in robust improvements
+
+<img src="https://velog.velcdn.com/images/heayounchoi/post/d42a51cb-be2c-4a72-b175-730fad7e9ab0/image.png">
+
+- since ViT encoder operates on patch-level inputs, as opposed to pixel-level, the differences in how to encode spatial information is less important
+
+
