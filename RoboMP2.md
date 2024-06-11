@@ -1,4 +1,4 @@
-### [$$RoboMP^2$$: A Robotic Multimodal Perception-Planning Framework with Multimodal Large Language Models](https://arxiv.org/pdf/2404.04929)
+### [RoboMP^2: A Robotic Multimodal Perception-Planning Framework with Multimodal Large Language Models](https://arxiv.org/pdf/2404.04929)
 
 **Abstract**
 - RoboMP2 is a framework for robotic manipulation which consists of a Goal-Conditioned Multimodal Perceptor (GCMP) and a Retrieval-Augmented Multimodal Planner (RAMP).
